@@ -1,0 +1,43 @@
+{
+    "_preamble": {
+        "project": "Kaggle-Predicting-Loan-Payback",
+        "author": "Brice Nelson",
+        "role": "Backend & ML Engineer",
+        "website": "https://www.devbybrice.com",
+        "description": "Structured project metadata for Kaggle Predict Loan Payback competition.",
+        "last_updated": "2025-11-02"
+    },
+    "title": "Predicting Loan Payback — Kaggle Competition",
+    "slug": "kaggle-predict-loan-payback",
+    "competitionName": "Predict Loan Payback",
+    "competitionURL": "https://www.kaggle.com/competitions/predict-loan-payback",
+    "startDate": "2025-11-01",
+    "endDate": "2025-11-30",
+    "projectOwner": "Brice Nelson",
+    "organization": "Kaggle Series",
+    "status": "In Progress",
+    "readTime": "8 min read",
+    "tags": [
+        "Kaggle",
+        "Machine Learning",
+        "Classification",
+        "Finance",
+        "Loan Risk",
+        "Data Science"
+    ],
+    "description": "This repository contains Brice's entry for the Kaggle competition 'Predict Loan Payback' (Nov 2025). The project applies supervised machine learning techniques to estimate loan default risk based on applicant and financial attributes, emphasizing explainability, model comparison, and performance optimization.",
+    "goals": [
+        "Perform exploratory data analysis and detect data imbalances.",
+        "Engineer relevant borrower and loan-level features.",
+        "Train, validate, and compare multiple ML models (LogReg, XGBoost, LightGBM).",
+        "Tune hyperparameters and evaluate performance via ROC-AUC.",
+        "Submit optimized predictions to Kaggle leaderboard."
+    ],
+    "evaluationMetric": "ROC-AUC",
+    "author": {
+        "name": "Brice Nelson",
+        "role": "Backend & ML Engineer",
+        "website": "https://www.devbybrice.com",
+        "email": "brice@devbybrice.com"
+    }
+}

@@ -1,0 +1,121 @@
+# =========================================================
+# Project: Kaggle-Predicting-Loan-Payback
+# Author: Brice Nelson |  Backend & ML Engineer
+# Website: https://www.devbybrice.com
+# Description: Attribute configuration for clean diffs, cross-OS consistency, and large file control
+# Last Updated: November 2, 2025
+# =========================================================
+
+# =========================================================
+# ⚙️ .gitattributes for Kaggle-Predicting-Loan-Payback
+# Ensures clean diffs, cross-OS compatibility, and LFS setup
+# =========================================================
+
+# --------------------------------------------
+# 🌐 Line Endings
+# --------------------------------------------
+# Normalize all text files to LF in repo, auto-convert on checkout
+* text=auto eol=lf
+
+# --------------------------------------------
+# 🧠 Notebooks
+# --------------------------------------------
+# Prevent large notebook JSON diffs cluttering GitHub
+*.ipynb diff=none merge=union
+*.ipynb linguist-language=Jupyter Notebook
+
+# --------------------------------------------
+# 🐍 Python
+# --------------------------------------------
+*.py text diff=python
+*.pyw text diff=python
+*.pyx text
+*.pxd text
+*.pxi text
+*.pyi text
+
+# --------------------------------------------
+# ⚙️ Configuration / Metadata
+# --------------------------------------------
+*.yml text
+*.yaml text
+*.toml text
+*.ini text
+*.cfg text
+*.json text
+*.env text
+*.lock text
+*.md text diff=markdown
+*.rst text
+*.html text
+*.css text
+*.js text
+
+# --------------------------------------------
+# 📊 Data Files
+# --------------------------------------------
+*.csv text diff=csv
+*.tsv text diff=tsv
+*.json text
+*.xml text
+*.yaml text
+*.yml text
+
+# Large files → mark for Git LFS (if enabled)
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.feather filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# --------------------------------------------
+# 🧾 Documentation / Text Files
+# --------------------------------------------
+*.txt text
+*.md text diff=markdown
+*.qmd text diff=markdown
+*.csv text diff=csv
+*.ipynb diff=none
+
+# --------------------------------------------
+# 🧰 IDEs
+# --------------------------------------------
+.idea/** linguist-generated
+.vscode/** linguist-generated
+
+# --------------------------------------------
+# 🧪 Environment / Lockfiles
+# --------------------------------------------
+requirements.txt text eol=lf
+environment.yml text eol=lf
+uv.lock text eol=lf
+pyproject.toml text eol=lf
+
+# --------------------------------------------
+# 📦 Binary / Models
+# --------------------------------------------
+*.bin binary
+*.pkl binary
+*.h5 binary
+*.hdf5 binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.tflite binary
+
+# --------------------------------------------
+# 🧮 Jupyter Output Artifacts
+# --------------------------------------------
+*.nbconvert.ipynb diff=none
+output/* diff=none
+outputs/* diff=none
+
+# --------------------------------------------
+# 🪶 Optional GitHub Linguist Settings
+# --------------------------------------------
+# Don’t count vendored or data files toward language stats
+data/* linguist-vendored
+models/* linguist-vendored
+submissions/* linguist-vendored

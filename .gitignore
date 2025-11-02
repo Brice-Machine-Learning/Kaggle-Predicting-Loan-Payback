@@ -1,0 +1,234 @@
+# =========================================================
+# Project: Kaggle-Predicting-Loan-Payback
+# Author: Brice Nelson |  Backend & ML Engineer
+# Website: https://www.devbybrice.com
+# Description: Global ignore rules for pip, conda, uv, JetBrains, VS Code, and Kaggle ML environments
+# Last Updated: November 2, 2025
+# =========================================================
+
+# =========================================================
+# 🧹 Global .gitignore for Kaggle-Predicting-Loan-Payback
+# Covers pip, conda, uv, JetBrains, VS Code, and ML artifacts
+# =========================================================
+
+
+# --------------------------------------------
+# 🧱 Python / Environment
+# --------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.pkl.gz
+*.pickle
+*.so
+*.egg
+*.egg-info/
+*.log
+*.tmp
+*.cache/
+*.pyproject.toml.lock
+*.pyc
+
+# Byte-compiled and temp files
+*$py.class
+.env
+.env.*
+venv/
+venv*/
+.venv/
+.venv*/
+.envrc
+.env.local
+
+# Pip and uv caches
+pip-wheel-metadata/
+pip-download-cache/
+uv.lock
+.uv/
+.uv_cache/
+.uv_cache/
+__pypackages__/
+site/
+.wheelhouse/
+
+# Conda environment files and build artifacts
+conda-meta/
+*.conda
+*.yaml~
+*.yml~
+*.env.yaml
+*.env.yml
+*.lock
+
+# Local databases (if used)
+*.sqlite3
+*.db
+instance/
+db.sqlite3
+
+
+# --------------------------------------------
+# 🧪 Jupyter / IPython / Notebooks
+# --------------------------------------------
+.ipynb_checkpoints/
+jupyter_notebook_config.py
+profile_default/
+.ipython/
+.notebook/
+.notebooks/
+output/
+outputs/
+*.nbconvert.ipynb
+
+
+# --------------------------------------------
+# 📦 Data (Do not push large or raw data)
+# --------------------------------------------
+data/raw/
+data/processed/
+data/external/
+data/interim/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.zip
+*.gz
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.sav
+*.pandas
+*.arrow
+*.joblib
+
+
+# --------------------------------------------
+# 🤖 ML / Model Artifacts
+# --------------------------------------------
+models/
+checkpoints/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.joblib
+*.weights
+*.bin
+
+
+# --------------------------------------------
+# 🧮 Kaggle / Notebooks / Submissions
+# --------------------------------------------
+kaggle.json
+.kaggle/
+submissions/*.csv
+*.submission.csv
+submission*.csv
+submission.csv
+*.ipynb_kernelspec
+*.ipynb_checkpoints
+
+
+# --------------------------------------------
+# 🧰 IDEs / Editors
+# --------------------------------------------
+
+# VS Code
+.vscode/
+.code-workspace
+.history/
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ, DataSpell)
+.idea/
+*.iml
+.idea_modules/
+out/
+workspace.xml
+tasks.xml
+*.ipr
+*.iws
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+
+# --------------------------------------------
+# 🧾 Logs / Reports / Cache
+# --------------------------------------------
+logs/
+*.log
+*.out
+*.err
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+*.tmp
+*.temp
+*.pid
+*.gz
+*.bz2
+*.tar
+*.tar.gz
+*.7z
+
+
+# --------------------------------------------
+# 🧱 Project-specific (Safe to ignore)
+# --------------------------------------------
+notebooks/.ipynb_checkpoints/
+cache/
+tmp/
+temp/
+sandbox/
+local_test/
+scratch/
+archive/
+__mocks__/
+mlruns/
+wandb/
+mlartifacts/
+mlflow.db
+*.mlflow
+experiments/
+reports/
+figures/
+charts/
+plots/
+
+
+# --------------------------------------------
+# 🧾 OS / Misc
+# --------------------------------------------
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+*.tmp
+*.temp
+*.pid
+*.gz
+*.bz2
+*.tar
+*.tar.gz
+*.7z
+*.tgz
+*.zip
+*.rar
+*.bak
+*.bak~
