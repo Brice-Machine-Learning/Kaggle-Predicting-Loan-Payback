@@ -16,8 +16,8 @@
 **Key Tasks:**
 - [x] Create repo with `.gitignore`, `environment.yml`, `requirements.txt`.
 - [x] Add `README.md` and `docs/reference.md` for competition metadata.
-- [ ] Configure Kaggle CLI and authenticate.
-- [ ] Create initial project structure:
+- [x] Configure Kaggle CLI and authenticate.
+- [x] Create initial project structure:
 
 ---
 
