@@ -73,11 +73,14 @@ Kaggle-Predicting-Loan-Payback/
 │   └── 07_submission.ipynb                     # Generate final submission
 │
 ├── src/
+│   ├── __init__.py                             # initialization for src folder
+│   ├── utils/                                  # Utility functions
+│   │   ├── __init__.py                         # initialization of utils folder
+│   │   └── visualization_utils.py              # Visualization function
 │   ├── data_prep.py                            # Data loading and preprocessing scripts
-│   ├── feature_engineering.py                  # 
+│   ├── feature_engineering.py                  
 │   ├── train_model.py
-│   ├── evaluate.py
-│   └── utils.py
+│   └── evaluate.py
 │
 ├── models/
 │   ├── baseline_model.pkl
