@@ -195,3 +195,22 @@ Backend Developer & ML Engineer (Transitioning from Civil Engineering)
 📬 [Email](brice@devbybrice.com)
 
 ---
+
+## 📚 Citation
+
+This project uses data from the Kaggle competition:
+
+> Yao Yan, Walter Reade, Elizabeth Park. *Predicting Loan Payback.*  
+> Kaggle, 2025. [https://www.kaggle.com/competitions/playground-series-s5e11](https://www.kaggle.com/competitions/playground-series-s5e11)
+
+If you use or reference this work, please cite the dataset as:
+
+```bibtex
+@misc{playground-series-s5e11,
+    author = {Yao Yan, Walter Reade, Elizabeth Park},
+    title = {Predicting Loan Payback},
+    year = {2025},
+    howpublished = {\url{https://kaggle.com/competitions/playground-series-s5e11}},
+    note = {Kaggle}
+}
+```
