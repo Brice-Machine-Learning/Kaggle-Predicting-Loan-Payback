@@ -29,6 +29,7 @@
 
 **Key Tasks:**
 - [ ] Summarize key statistics (mean, median, skew, correlations).
+- [ ] Create hot coded categorical variables for modeling.
 - [ ] Visualize distributions (loan amount, term, credit score, etc.).
 - [ ] Identify relationships between predictors and target variable.
 - [ ] Document findings in `notebooks/01_exploration.ipynb`.
