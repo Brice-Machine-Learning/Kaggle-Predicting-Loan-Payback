@@ -194,7 +194,7 @@ Each `.csv` file in `/submissions` follows Kaggle’s format:
 
 ## 🧑‍💻 Author
 
-**Brice**  
+**Brice Nelson**  
 Backend Developer & ML Engineer (Transitioning from Civil Engineering)  
 🌐 [Portfolio](https://www.devbybrice.com)  
 📬 [Email](brice@devbybrice.com)
