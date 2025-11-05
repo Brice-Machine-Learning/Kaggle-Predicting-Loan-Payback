@@ -30,7 +30,7 @@
 **Key Tasks:**
 - [x] Summarize key statistics (mean, median, skew, correlations).
 - [x] Visualize distributions (loan amount, term, credit score, etc.).
-- [ ] Identify relationships between predictors and target variable.
+- [x] Identify relationships between predictors and target variable.
 - [x] Document findings in `notebooks/01_eda.ipynb`.
 
 **Deliverable:**  

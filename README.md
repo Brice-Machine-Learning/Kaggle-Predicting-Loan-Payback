@@ -72,6 +72,12 @@ Kaggle-Predicting-Loan-Payback/
 │   ├── 06_interpretation_reporting.ipynb       # Generate model interpretation reports and visualizations
 │   └── 07_submission.ipynb                     # Generate final submission
 │
+├── figures/
+│   ├── histograms/
+│   ├── boxplots/
+│   ├── countplots/
+│   └── correlations/
+│
 ├── src/
 │   ├── __init__.py                             # initialization for src folder
 │   ├── utils/                                  # Utility functions
