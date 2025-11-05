@@ -28,11 +28,10 @@
 - Identify missing values, categorical vs numerical columns, and potential data leakage.
 
 **Key Tasks:**
-- [ ] Summarize key statistics (mean, median, skew, correlations).
-- [ ] Create hot coded categorical variables for modeling.
-- [ ] Visualize distributions (loan amount, term, credit score, etc.).
+- [x] Summarize key statistics (mean, median, skew, correlations).
+- [x] Visualize distributions (loan amount, term, credit score, etc.).
 - [ ] Identify relationships between predictors and target variable.
-- [ ] Document findings in `notebooks/01_exploration.ipynb`.
+- [x] Document findings in `notebooks/01_eda.ipynb`.
 
 **Deliverable:**  
 EDA notebook with clear narrative and saved plots (`/figures/` optional).
