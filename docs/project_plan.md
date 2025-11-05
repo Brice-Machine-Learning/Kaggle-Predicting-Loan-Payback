@@ -34,7 +34,7 @@
 - [x] Document findings in `notebooks/01_eda.ipynb`.
 
 **Deliverable:**  
-EDA notebook with clear narrative and saved plots (`/figures/` optional).
+- [x] EDA notebook with clear narrative and saved plots (`/figures/`).
 
 ---
 
