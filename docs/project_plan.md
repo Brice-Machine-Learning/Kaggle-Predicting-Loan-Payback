@@ -44,7 +44,7 @@
 - Clean and transform data for model ingestion.
 
 **Key Tasks:**
-- [ ] Handle missing values (imputation or drop).
+- [x] Handle missing values (imputation or drop). (**No Missing Data**)
 - [ ] Encode categorical features (One-Hot / Target Encoding).
 - [ ] Scale or normalize numeric variables.
 - [ ] Engineer derived features (e.g., loan-to-income ratio, age buckets).
