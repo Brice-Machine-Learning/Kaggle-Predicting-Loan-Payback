@@ -2,124 +2,154 @@
 
 **Competition Dates:** November 1 – November 30, 2025  
 **Repository:** `Kaggle-Predict-Loan-Payback`  
-**Goal:** Build and evaluate a machine learning model to predict whether a loan will be paid back, based on borrower and loan attributes.
+**Goal:** Build and evaluate a machine learning model to predict whether a loan will be paid back using borrower and loan attributes.
 
 ---
 
 ## **Phase 1 — Project Setup & Environment (Nov 1–3)**
 
 **Objectives:**
-- Initialize local development and version control.
-- Set up consistent environments (pip / conda / uv).
-- Connect CLI to Kaggle for dataset download and submission.
+- Initialize environment, repo structure, and reproducibility.
+- Set up tooling for data access and experiment tracking.
 
 **Key Tasks:**
-- [x] Create repo with `.gitignore`, `environment.yml`, `requirements.txt`.
-- [x] Add `README.md` and `docs/reference.md` for competition metadata.
-- [x] Configure Kaggle CLI and authenticate.
-- [x] Create initial project structure:
+- [x] Create repo with `.gitignore`, `environment.yml`, and `requirements.txt`.
+- [x] Add `README.md` and `docs/reference.md`.
+- [x] Configure Kaggle CLI authentication.
+- [x] Establish directory structure (`data/`, `notebooks/`, `src/`, `models/`, `docs/`).
 
 ---
 
 ## **Phase 2 — Data Understanding & Exploration (Nov 3–8)**
 
 **Objectives:**
-- Load and inspect training and test datasets.
-- Identify missing values, categorical vs numerical columns, and potential data leakage.
+- Explore dataset characteristics, identify target distribution, and detect early data issues.
 
 **Key Tasks:**
-- [x] Summarize key statistics (mean, median, skew, correlations).
-- [x] Visualize distributions (loan amount, term, credit score, etc.).
-- [x] Identify relationships between predictors and target variable.
-- [x] Document findings in `notebooks/01_eda.ipynb`.
+- [x] Load and inspect raw training and test datasets.
+- [x] Summarize descriptive statistics and data types.
+- [x] Visualize distributions, correlations, and feature relationships.
+- [x] Document insights and plots in `notebooks/01_eda.ipynb`.
 
-**Deliverable:**  
-- [x] EDA notebook with clear narrative and saved plots (`/figures/`).
+**Deliverable:**
+- [x] EDA notebook + saved figures under `/figures/`.
 
 ---
 
-## **Phase 3 — Feature Engineering & Preprocessing (Nov 9–14)**
+## **Phase 3 — Data Cleaning & Preprocessing (Nov 9–12)**
 
 **Objectives:**
-- Clean and transform data for model ingestion.
+- Transform raw data into a clean, validated, fully numeric format.
 
 **Key Tasks:**
-- [x] Handle missing values (imputation or drop). (**No Missing Data**)
-- [ ] Encode categorical features (One-Hot / Target Encoding).
-- [ ] Scale or normalize numeric variables.
-- [ ] Engineer derived features (e.g., loan-to-income ratio, age buckets).
-- [ ] Split training and validation sets.
+- [x] Handle missing values (N/A — dataset includes no nulls).
+- [x] Split `grade_subgrade` into `grade` + `subgrade` and apply ordinal encoding.
+- [x] One-Hot Encode categorical variables.
+- [x] Scale numeric variables with StandardScaler:
+  - `annual_income`
+  - `debt_to_income_ratio`
+  - `credit_score`
+  - `loan_amount`
+  - `interest_rate`
+  - `grade`
+  - `subgrade`
+- [x] Verify train/test column alignment.
+- [x] Export cleaned datasets to `/data/processed/`.
 
-**Deliverable:**  
-Processed dataset saved under `/data/processed/`.
+**Deliverable:**
+- `loan_train_scaled.csv`  
+- `loan_test_scaled.csv`
 
 ---
 
-## **Phase 4 — Model Development (Nov 15–21)**
+## **Phase 4 — Feature Engineering (Nov 13–15)**
 
 **Objectives:**
-- Train multiple models, evaluate, and tune.
+- Enrich the dataset using domain knowledge and statistical transformations.
 
-**Key Tasks:**
-- [ ] Baseline model (Logistic Regression).
-- [ ] Gradient boosting models (XGBoost, LightGBM, CatBoost).
-- [ ] Hyperparameter tuning (Optuna or GridSearchCV).
-- [ ] Compare models on ROC-AUC / F1-score.
-- [ ] Save best model with `joblib` or `pickle`.
+**Key Engineering Tasks:**
+- [ ] Loan-to-Income ratio
+- [ ] High DTI (debt-to-income) flag
+- [ ] Credit score buckets (very high, high, medium, low, very low)
+- [ ] Interaction terms (e.g., grade × loan_purpose)
+- [ ] Optional: log transforms, quantile transforms, binning
+- [ ] Validate correlations and feature impact
+- [ ] Export final feature-engineered dataset
 
-**Deliverable:**  
-Modeling notebook + saved model file in `/models/`.
+**Deliverable:**
+- `03_feature_engineering.ipynb`
+- `loan_train_features.csv`, `loan_test_features.csv`
 
 ---
 
-## **Phase 5 — Validation, Documentation & Submission (Nov 22–28)**
+## **Phase 5 — Model Development (Nov 16–21)**
 
 **Objectives:**
-- Validate on hold-out set and prepare Kaggle submission.
+- Train baseline and advanced models using engineered features.
 
 **Key Tasks:**
-- [ ] Validate model generalization performance.
-- [ ] Prepare `submission.csv` in Kaggle format.
-- [ ] Run `kaggle competitions submit` via CLI.
-- [ ] Document methodology and results in `README.md`.
+- [ ] Baseline Logistic Regression
+- [ ] Gradient boosting models (XGBoost, LightGBM, CatBoost)
+- [ ] Hyperparameter tuning (Optuna / GridSearchCV)
+- [ ] Evaluate models using ROC-AUC, PR-AUC, and F1-score
+- [ ] Save best model using joblib/pickle
 
-**Deliverable:**  
-Final submission file + updated documentation.
+**Deliverable:**
+- Modeling notebook (`04_modeling.ipynb`)
+- Saved models under `/models/`
 
 ---
 
-## **Phase 6 — Review & Retrospective (Nov 29–30)**
+## **Phase 6 — Validation, Submission & Documentation (Nov 22–28)**
 
 **Objectives:**
-- Review approach, lessons learned, and potential improvements.
+- Validate generalization, prepare final predictions, and document results.
 
 **Key Tasks:**
-- [ ] Record competition leaderboard score and rank.
-- [ ] Summarize key learnings in `/docs/final_report.md`.
-- [ ] Reflect on reproducibility and potential code improvements.
+- [ ] Validate hold-out performance
+- [ ] Generate `submission.csv` in Kaggle format
+- [ ] Submit via Kaggle CLI
+- [ ] Update README with method + results summary
+
+**Deliverable:**
+- Final submission file  
+- Updated documentation
+
+---
+
+## **Phase 7 — Review & Retrospective (Nov 29–30)**
+
+**Objectives:**
+- Reflect on modeling process, performance, and improvements.
+
+**Key Tasks:**
+- [ ] Record leaderboard score and ranking
+- [ ] Summarize insights in `/docs/final_report.md`
+- [ ] Note reproducibility or design improvements for future work
 
 ---
 
 ## ✅ **Milestones**
 
 | Date (2025) | Milestone | Deliverable |
-|--------------|------------|--------------|
+|-------------|-----------|-------------|
 | Nov 3 | Environment setup complete | Repo initialized |
-| Nov 8 | EDA completed | 01_exploration.ipynb |
-| Nov 14 | Feature engineering complete | Processed data |
-| Nov 21 | Model training complete | 02_modeling.ipynb |
+| Nov 8 | EDA completed | 01_eda.ipynb |
+| Nov 12 | Preprocessing completed | Cleaned data |
+| Nov 15 | Feature engineering completed | Engineered dataset |
+| Nov 21 | Model training completed | 04_modeling.ipynb |
 | Nov 28 | Submission ready | submission.csv |
-| Nov 30 | Competition end | final_report.md |
+| Nov 30 | Competition wrapped | final_report.md |
 
 ---
 
 ## **Optional Enhancements**
-- Integrate MLflow or Weights & Biases for experiment tracking.
-- Containerize with Docker for reproducibility.
-- Add a `Makefile` for automated workflow steps.
-- Create a small Streamlit dashboard for model insights.
+- Integrate MLflow or Weights & Biases for tracking.
+- Add Dockerfile for reproducibility.
+- Include Makefile for common workflows.
+- Build a Streamlit dashboard for model interpretability.
 
 ---
 
-**Author:** Brice Nelson 
-**Last Updated:** November 2, 2025
+**Author:** Brice Nelson  
+**Last Updated:** November 15, 2025
