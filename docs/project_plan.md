@@ -68,13 +68,13 @@
 - Enrich the dataset using domain knowledge and statistical transformations.
 
 **Key Engineering Tasks:**
-- [ ] Loan-to-Income ratio
-- [ ] High DTI (debt-to-income) flag
-- [ ] Credit score buckets (very high, high, medium, low, very low)
-- [ ] Interaction terms (e.g., grade × loan_purpose)
-- [ ] Optional: log transforms, quantile transforms, binning
-- [ ] Validate correlations and feature impact
-- [ ] Export final feature-engineered dataset
+- [x] Loan-to-Income ratio
+- [x] High DTI (debt-to-income) flag
+- [x] Credit score buckets (very high, high, medium, low, very low)
+- [x] Interaction terms (e.g., grade × loan_purpose)
+- [x] Quantile transforms, binning
+- [x] Validate correlations and feature impact
+- [x] Export final feature-engineered dataset
 
 **Deliverable:**
 - `03_feature_engineering.ipynb`
