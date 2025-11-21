@@ -88,7 +88,10 @@
 - Train baseline and advanced models using engineered features.
 
 **Key Tasks:**
-- [ ] Baseline Logistic Regression
+- [x] Baseline Logistic Regression
+- [x] Random Forest
+- [x] Extra Trees Classifier
+- [ ] Support Vector Machine (if practical) 
 - [ ] Gradient boosting models (XGBoost, LightGBM, CatBoost)
 - [ ] Hyperparameter tuning (Optuna / GridSearchCV)
 - [ ] Evaluate models using ROC-AUC, PR-AUC, and F1-score
