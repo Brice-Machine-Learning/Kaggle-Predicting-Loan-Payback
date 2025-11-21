@@ -92,8 +92,8 @@
 - [x] Random Forest
 - [x] Extra Trees Classifier
 - [ ] Support Vector Machine (if practical) 
-- [ ] Gradient boosting models (XGBoost, LightGBM, CatBoost)
-- [ ] Hyperparameter tuning (Optuna / GridSearchCV)
+- [x] Gradient boosting models (XGBoost, LightGBM, CatBoost)
+- [x] Hyperparameter tuning (Optuna / GridSearchCV)
 - [ ] Evaluate models using ROC-AUC, PR-AUC, and F1-score
 - [ ] Save best model using joblib/pickle
 
