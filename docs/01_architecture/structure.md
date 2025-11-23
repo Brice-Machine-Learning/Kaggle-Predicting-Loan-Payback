@@ -12,10 +12,9 @@ Kaggle-Predicting-Loan-Payback/
 │   ├── 01_eda.ipynb                            # Exploratory data analysis
 │   ├── 02_data_cleaning.ipynb                  # Address missing values, inconsistent data, and outliers
 │   ├── 03_feature_engineering.ipynb            # Create new features and derive ratios or flags
-│   ├── 04_model_training.ipynb                 # Train baseline and tree-based models
-│   ├── 05_model_evaluation.ipynb               # Evaluate model performance and tune hyperparameters
-│   ├── 06_interpretation_reporting.ipynb       # Generate model interpretation reports and visualizations
-│   └── 07_submission.ipynb                     # Generate final submission
+│   ├── 04_model_training.ipynb                 # Train baseline and tree-based models, evaluate model performance and tune hyperparameters
+│   ├── 05_interpretation_reporting.ipynb       # Generate model interpretation reports and visualizations
+│   └── 06_submission.ipynb                     # Generate final submission
 │
 ├── figures/
 │   ├── histograms/
