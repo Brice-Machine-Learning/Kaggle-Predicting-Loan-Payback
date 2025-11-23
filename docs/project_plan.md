@@ -82,26 +82,57 @@
 
 ---
 
-## **Phase 5 — Model Development (Nov 16–21)**
+# ✅ Phase 5 — Model Development (Nov 16–21)
 
-**Objectives:**
-- Train baseline and advanced models using engineered features.
+**Objective:**  
+Develop, tune, validate, and finalize a production-grade loan repayment prediction model using engineered features. Ensure the entire pipeline is **reproducible**, **well-documented**, and **deployment-ready**.
 
-**Key Tasks:**
-- [x] Baseline Logistic Regression
-- [x] Random Forest
-- [x] Extra Trees Classifier
-- [ ] Support Vector Machine (if practical) 
-- [x] Gradient boosting models (XGBoost, LightGBM, CatBoost)
-- [x] Hyperparameter tuning (Optuna / GridSearchCV)
-- [x] Evaluate models using ROC-AUC, PR-AUC, and F1-score
-- [x] Save best model using joblib/pickle
-- [ ] Run validation checklist to ensure reproducibility
-- [ ] Document model performance in `docs/final_report.md`
+---
 
-**Deliverable:**
-- Modeling notebook (`04_modeling.ipynb`)
-- Saved models under `/models/`
+## 🔧 Key Tasks
+
+### **Model Training & Baselines**
+- [x] Baseline Logistic Regression  
+- [x] Random Forest  
+- [x] Extra Trees Classifier  
+- [ ] Support Vector Machine *(optional — skipped for compute constraints)*  
+- [x] Gradient Boosting Models (XGBoost, LightGBM, CatBoost)
+
+### **Model Optimization**
+- [x] Hyperparameter tuning (Optuna)  
+- [x] Evaluate models using ROC-AUC, PR-AUC, and F1-score  
+- [x] Build and evaluate weighted model blending  
+- [x] Threshold tuning to maximize F1  
+- [x] Save best model + threshold metadata (joblib/json)
+
+### **Model Validation & Reproducibility**
+- [x] Add ROC Curve and PR Curve visualizations  
+- [x] Add LightGBM feature importance plots  
+- [x] Reproducibility test: load saved model + threshold and re-run metrics  
+- [ ] Validate Kaggle submission row count matches test set  
+- [ ] Confirm predictions remain identical after reload  
+- [ ] Final notebook cleanup (remove dead cells, warnings, stray prints)
+
+### **Documentation**
+- [ ] Update `docs/project_plan.md` with final model results  
+- [ ] Add `docs/final_report.md` summarizing:
+  - Best model  
+  - Threshold selection  
+  - Final metrics  
+  - Feature importance  
+  - Notes on blending and tuning  
+- [x] Add `README_model_helper.md` (programmatic model loading)
+
+---
+
+## 📦 Final Deliverables
+- Updated modeling notebook (`04_model_training.ipynb`)  
+- Saved model artifacts under `/models/`:
+  - `best_model.pkl`  
+  - `threshold_metadata.json`  
+  - Optional: `model_bundle.pkl`  
+- Final Kaggle-ready submission CSV (`/data/submissions/`)  
+- Documentation under `docs/`, including `final_report.md` (forthcoming)
 
 ---
 
