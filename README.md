@@ -2,15 +2,16 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Competition-Nov%201%20→%20Nov%2030%2C%202025-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Machine%20Learning%20%7C%20Finance-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Evaluation-ROC--AUC-orange?style=flat-square">
   <img src="https://img.shields.io/badge/Platform-Kaggle-lightgrey?style=flat-square&logo=kaggle">
+  <img src="https://img.shields.io/badge/Kaggle%20Score-0.79292-blue?style=flat-square&logo=kaggle">
 </p>
 
 ---
 
-> **Competition:** [Predict Loan Payback](https://www.kaggle.com/competitions/predict-loan-payback)  
+> **Competition:** [Predict Loan Payback](https://www.kaggle.com/competitions/playground-series-s5e11)  
 > **Duration:** November 1 → November 30, 2025  
 > **Goal:** Predict the probability that a loan will be repaid in full.
 
@@ -67,10 +68,8 @@ Kaggle-Predicting-Loan-Payback/
 │   ├── 01_eda.ipynb                            # Exploratory data analysis
 │   ├── 02_data_cleaning.ipynb                  # Address missing values, inconsistent data, and outliers
 │   ├── 03_feature_engineering.ipynb            # Create new features and derive ratios or flags
-│   ├── 04_model_training.ipynb                 # Train baseline and tree-based models
-│   ├── 05_model_evaluation.ipynb               # Evaluate model performance and tune hyperparameters
-│   ├── 06_interpretation_reporting.ipynb       # Generate model interpretation reports and visualizations
-│   └── 07_submission.ipynb                     # Generate final submission
+│   ├── 04_model_training.ipynb                 # Train baseline and tree-based models, evaluate model performance and tune hyperparameters
+│   └──05_interpretation_reporting.ipynb       # Generate model interpretation reports and visualizations, final submission
 │
 ├── figures/
 │   ├── histograms/
@@ -80,13 +79,11 @@ Kaggle-Predicting-Loan-Payback/
 │
 ├── src/
 │   ├── __init__.py                             # initialization for src folder
-│   ├── utils/                                  # Utility functions
-│   │   ├── __init__.py                         # initialization of utils folder
-│   │   └── visualization_utils.py              # Visualization function
-│   ├── data_prep.py                            # Data loading and preprocessing scripts
-│   ├── feature_engineering.py                  
-│   ├── train_model.py
-│   └── evaluate.py
+│   └── utils/                                  # Utility functions
+│       ├── __init__.py                         # initialization of utils folder
+│       ├── ensure_directory.py                 # function to check for directories and create them if missing
+│       ├── model_loader.py                     # model loading function
+│       └── visualization_utils.py              # Visualization function
 │
 ├── models/
 │   ├── baseline_model.pkl
@@ -98,7 +95,6 @@ Kaggle-Predicting-Loan-Payback/
 │
 ├── requirements.txt
 ├── environment.yml                             # Conda environment (optional)
-├── kaggle.json                                 # API credentials (excluded from Git)
 ├── README.md
 └── LICENSE
 ```
@@ -177,6 +173,17 @@ Each `.csv` file in `/submissions` follows Kaggle’s format:
 | 1  | 0.84 |
 | 2  | 0.32 |
 | 3  | 0.91 |
+
+---
+
+## 🏆 Leaderboard Performance
+
+**Public Score:** 0.79292 (ROC-AUC)  
+**Rank:** 2438 out of 10,078 participants  
+**Submission File:** `submission_lgbm_threshold_0_50.csv`  
+**Date:** November 23, 2025  
+
+This was my first submission and successfully validated the end-to-end modeling and submission pipeline.
 
 ---
 

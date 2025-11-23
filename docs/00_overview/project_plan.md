@@ -82,7 +82,7 @@
 
 ---
 
-# ✅ Phase 5 — Model Development (Nov 16–21)
+# ✅ Phase 5 — Model Development (Nov 16–23)
 
 **Objective:**  
 Develop, tune, validate, and finalize a production-grade loan repayment prediction model using engineered features. Ensure the entire pipeline is **reproducible**, **well-documented**, and **deployment-ready**.
@@ -111,11 +111,11 @@ Develop, tune, validate, and finalize a production-grade loan repayment predicti
 - [x] Reproducibility test: load saved model + threshold and re-run metrics  
 - [x] Validate Kaggle submission row count matches test set  
 - [x] Confirm predictions remain identical after reload  
-- [ ] Final notebook cleanup (remove dead cells, warnings, stray prints)
+- [x] Final notebook cleanup (remove dead cells, warnings, stray prints)
 
 ### **Documentation**
 - [x] Update `docs/project_plan.md` with final model results  
-- [ ] Add `docs/final_report.md` summarizing:
+- [x] Add `docs/final_report.md` summarizing:
   - Best model  
   - Threshold selection  
   - Final metrics  
@@ -131,25 +131,45 @@ Develop, tune, validate, and finalize a production-grade loan repayment predicti
   - `best_model.pkl`  
   - `threshold_metadata.json`  
   - Optional: `model_bundle.pkl`  
-- Final Kaggle-ready submission CSV (`/data/submissions/`)  
-- Documentation under `docs/`, including `final_report.md` (forthcoming)
+- Documentation under `docs/`, including `final_report.md`
 
 ---
 
-## **Phase 6 — Validation, Submission & Documentation (Nov 22–28)**
+## **Phase 6 — Validation, Submission & Documentation (Nov 23–28)**
 
-**Objectives:**
-- Validate generalization, prepare final predictions, and document results.
+**Objectives:**  
+Validate model generalization, finalize predictions, create the Kaggle submission file, and document your methodology/results for portfolio use.
 
-**Key Tasks:**
-- [ ] Validate hold-out performance
-- [ ] Generate `submission.csv` in Kaggle format
-- [ ] Submit via Kaggle CLI
-- [ ] Update README with method + results summary
+---
 
-**Deliverable:**
-- Final submission file  
-- Updated documentation
+## **Key Tasks**
+
+- [x] Validate model on hold-out or cross-validation folds  
+- [x] Review metrics for overfitting / underfitting  
+- [x] Finalize chosen model for competition submission  
+- [x] Generate `submission.csv` in the exact Kaggle-required format  
+- [x] Submit via Kaggle CLI and confirm the submission score  
+- [x] Record the public leaderboard score  
+- [ ] Update project README  
+  - Method overview  
+  - Final model choice  
+  - Key metrics (train/validation/hold-out)  
+  - Kaggle leaderboard result  
+- [ ] Finalize summary sections in  
+  - `04_model_training.ipynb`  
+  - `05_interpretation_reporting.ipynb`
+
+---
+
+## **Deliverables**
+
+- **Final Submission File:**  
+  - `submission.csv`
+
+- **Documentation Updates:**  
+  - Updated README with results  
+  - Completed interpretation/reporting notebook  
+  - Final modeling summaries
 
 ---
 
