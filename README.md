@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Competition-Nov%201%20→%20Nov%2030%2C%202025-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Machine%20Learning%20%7C%20Finance-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Evaluation-ROC--AUC-orange?style=flat-square">
   <img src="https://img.shields.io/badge/Platform-Kaggle-lightgrey?style=flat-square&logo=kaggle">
