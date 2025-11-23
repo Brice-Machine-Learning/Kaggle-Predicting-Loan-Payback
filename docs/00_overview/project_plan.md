@@ -109,12 +109,12 @@ Develop, tune, validate, and finalize a production-grade loan repayment predicti
 - [x] Add ROC Curve and PR Curve visualizations  
 - [x] Add LightGBM feature importance plots  
 - [x] Reproducibility test: load saved model + threshold and re-run metrics  
-- [ ] Validate Kaggle submission row count matches test set  
-- [ ] Confirm predictions remain identical after reload  
+- [x] Validate Kaggle submission row count matches test set  
+- [x] Confirm predictions remain identical after reload  
 - [ ] Final notebook cleanup (remove dead cells, warnings, stray prints)
 
 ### **Documentation**
-- [ ] Update `docs/project_plan.md` with final model results  
+- [x] Update `docs/project_plan.md` with final model results  
 - [ ] Add `docs/final_report.md` summarizing:
   - Best model  
   - Threshold selection  

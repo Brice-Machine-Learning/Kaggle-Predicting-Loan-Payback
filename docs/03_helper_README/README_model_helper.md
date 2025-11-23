@@ -27,8 +27,8 @@ from src.utils.model_loader import (
 
 ```python
 model, threshold = load_model_and_threshold(
-    model_path="../models/best_lgbm_model.pkl",
-    threshold_path="../models/threshold_metadata.json"
+    model_path="../../models/best_lgbm_model.pkl",
+    threshold_path="../../models/threshold_metadata.json"
 )
 ```
 
