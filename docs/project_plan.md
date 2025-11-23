@@ -94,8 +94,10 @@
 - [ ] Support Vector Machine (if practical) 
 - [x] Gradient boosting models (XGBoost, LightGBM, CatBoost)
 - [x] Hyperparameter tuning (Optuna / GridSearchCV)
-- [ ] Evaluate models using ROC-AUC, PR-AUC, and F1-score
-- [ ] Save best model using joblib/pickle
+- [x] Evaluate models using ROC-AUC, PR-AUC, and F1-score
+- [x] Save best model using joblib/pickle
+- [ ] Run validation checklist to ensure reproducibility
+- [ ] Document model performance in `docs/final_report.md`
 
 **Deliverable:**
 - Modeling notebook (`04_modeling.ipynb`)
