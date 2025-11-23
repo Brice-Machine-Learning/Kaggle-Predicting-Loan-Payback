@@ -111,11 +111,11 @@ Develop, tune, validate, and finalize a production-grade loan repayment predicti
 - [x] Reproducibility test: load saved model + threshold and re-run metrics  
 - [x] Validate Kaggle submission row count matches test set  
 - [x] Confirm predictions remain identical after reload  
-- [ ] Final notebook cleanup (remove dead cells, warnings, stray prints)
+- [x] Final notebook cleanup (remove dead cells, warnings, stray prints)
 
 ### **Documentation**
 - [x] Update `docs/project_plan.md` with final model results  
-- [ ] Add `docs/final_report.md` summarizing:
+- [x] Add `docs/final_report.md` summarizing:
   - Best model  
   - Threshold selection  
   - Final metrics  
@@ -131,8 +131,7 @@ Develop, tune, validate, and finalize a production-grade loan repayment predicti
   - `best_model.pkl`  
   - `threshold_metadata.json`  
   - Optional: `model_bundle.pkl`  
-- Final Kaggle-ready submission CSV (`/data/submissions/`)  
-- Documentation under `docs/`, including `final_report.md` (forthcoming)
+- Documentation under `docs/`, including `final_report.md`
 
 ---
 
