@@ -179,7 +179,7 @@ Each `.csv` file in `/submissions` follows Kaggle’s format:
 ## 🏆 Leaderboard Performance
 
 **Public Score:** 0.79292 (ROC-AUC)  
-**Rank:** 3316 out of 11,450 participants  
+**Rank:** 3316 out of 3,850 participants  
 **Submission File:** `submission_lgbm_threshold_0_50.csv`  
 **Date:** November 30, 2025  
 
