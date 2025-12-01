@@ -179,9 +179,9 @@ Each `.csv` file in `/submissions` follows Kaggle’s format:
 ## 🏆 Leaderboard Performance
 
 **Public Score:** 0.79292 (ROC-AUC)  
-**Rank:** 2438 out of 10,078 participants  
+**Rank:** 3316 out of 11,450 participants  
 **Submission File:** `submission_lgbm_threshold_0_50.csv`  
-**Date:** November 23, 2025  
+**Date:** November 30, 2025  
 
 This was my first submission and successfully validated the end-to-end modeling and submission pipeline.
 
